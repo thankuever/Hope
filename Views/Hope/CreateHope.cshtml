@@ -1,0 +1,55 @@
+﻿@using Wish.Models
+@model HopeModel
+@{
+    ViewBag.Title = "MakeWish";
+}
+
+<div class="container">
+    @using (Html.BeginForm("CreateHope", "Hope", FormMethod.Post))
+    {
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <label>我是</label>
+                @Html.TextBoxFor(m => m.Name)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <label>來自</label>
+                @Html.DropDownListFor(m => m.From, new SelectList(Enum.GetValues(typeof(Plant))))
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <label>有著</label>
+                @Html.DropDownListFor(m => m.Category, new SelectList(Enum.GetValues(typeof(HopeCategory))))
+                <label>的願望:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <label>願望</label>
+                @Html.TextAreaFor(m => m.Content)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-5">
+                <input type="submit" value="許下心願" />
+            </div>
+        </div>
+    }
+</div>
+
+@*<audio src="~/Content/Music/power-star-rumble.wav" autoplay controls></audio>*@
+
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    label {
+        color: white;
+    }
+</style>
+
