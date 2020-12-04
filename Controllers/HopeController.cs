@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Hope.Models;
+using Hope.BLL;
 
-namespace Wish.Controllers
+namespace Hope.Controllers
 {
     public class HopeController : Controller
     {
@@ -17,5 +19,18 @@ namespace Wish.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult CreateHope(HopeModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                //model-> dto
+                HopeBLL bll = new HopeBLL();
+                //bll.InsertHope(dto);
+               return RedirectToAction("HopeList");
+            }
+           
+            return View(model);
+        }
     }
 }

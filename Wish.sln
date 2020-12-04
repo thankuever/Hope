@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wish", "Wish.csproj", "{7F924CCA-6481-4ECF-A10F-3DB7909718B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hope.Web", "Hope.Web.csproj", "{7F924CCA-6481-4ECF-A10F-3DB7909718B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hope.BLL", "..\Hope.BLL\Hope.BLL.csproj", "{06EAC8B0-4A43-424A-90F2-9B1FDC72E28A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hope.DAL", "..\Hope.DAL\Hope.DAL.csproj", "{8C201DAC-894E-4768-A368-5698BD1FE801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hope.DTO", "..\Hope.DTO\Hope.DTO.csproj", "{BFB05012-0FDA-45A5-B96B-0B1755CDE752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{7F924CCA-6481-4ECF-A10F-3DB7909718B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F924CCA-6481-4ECF-A10F-3DB7909718B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F924CCA-6481-4ECF-A10F-3DB7909718B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06EAC8B0-4A43-424A-90F2-9B1FDC72E28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06EAC8B0-4A43-424A-90F2-9B1FDC72E28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06EAC8B0-4A43-424A-90F2-9B1FDC72E28A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06EAC8B0-4A43-424A-90F2-9B1FDC72E28A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C201DAC-894E-4768-A368-5698BD1FE801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C201DAC-894E-4768-A368-5698BD1FE801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C201DAC-894E-4768-A368-5698BD1FE801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C201DAC-894E-4768-A368-5698BD1FE801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB05012-0FDA-45A5-B96B-0B1755CDE752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB05012-0FDA-45A5-B96B-0B1755CDE752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB05012-0FDA-45A5-B96B-0B1755CDE752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB05012-0FDA-45A5-B96B-0B1755CDE752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
